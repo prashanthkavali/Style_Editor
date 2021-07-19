@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     text-align: center;
     background-color: #FF9999;
@@ -22,7 +27,7 @@ img{
     border-radius: 15%;
 }
 
-p{
+#text{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     margin: 10px;
@@ -42,19 +47,41 @@ p{
     font-size: 2rem;
 }
 
+#input{
+    background: transparent;
+    width: 44rem;
+    padding: 0.8rem;
+    margin: 6% 0 0 1%;
+    font-size: 2rem;
+}
+
+/*Media Queries*/
 
 @media (max-width: 1028px) {
     h1 {
       text-align: center;
       font-size: 3rem;
     }
+
+    .add_text{
+        width: 50rem;
+    }
     
     img{
         width: 20rem;
     }
+
+    .btn{
+        width: 10rem;
+    }
+
+    #input{
+        width: 27rem;
+        text-align: left;
+    }
   }
 
-@media (max-width: 720px){
+@media (max-width: 600px){
 
     h1{
         margin-bottom: 10px;
@@ -66,9 +93,17 @@ p{
 
     p{
         font-size: 1rem;
+        padding: 20px;
     }
     .btn{
-        margin: 15px;
+        width: 20rem;
+        margin: 15px 0;
+        font-size: 1.5rem;
+    }
+
+    #input{
+        margin-left: 2px;
+        width: 20rem;
         font-size: 1.5rem;
     }
 }
